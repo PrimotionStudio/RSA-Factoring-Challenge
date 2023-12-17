@@ -25,14 +25,14 @@ long long int _atoi(const char *str) {
 
 int is_prime(long long int num) {
     if (num < 2) {
-        return 0;  // Not prime
+        return 0;
     }
     for (long long int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return 0;  // Not prime
+            return 0;
         }
     }
-    return 1;  // Prime
+    return 1;
 }
 
 int main(int ac, char const *av[]) {
